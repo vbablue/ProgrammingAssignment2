@@ -15,7 +15,7 @@ The following functions are for evaluation:
     already been calculated (and the matrix has not changed), then
     `cacheSolve` should retrieve the inverse from the cache.
 
-<!-- -->
+
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverseVector = getInverseVector)   
 }
 
-<!-- -->
+
 
 The following function  Caches the inverse of the matrix from the above function. 
 
@@ -49,7 +49,7 @@ The following function  Caches the inverse of the matrix from the above function
     }
 
 ### Test Cases to test the cache functions.
-<!-- -->
+
 1. amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
 2. amatrix$get()         # Returns original matrix
 3. cacheSolve(amatrix)   # Computes, caches, and returns    matrix inverse
