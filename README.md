@@ -15,7 +15,7 @@ The following functions are for evaluation:
     already been calculated (and the matrix has not changed), then
     `cacheSolve` should retrieve the inverse from the cache.
 
-
+<!-- -->
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -33,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-The following function  Caches the inverse of the matrix from the above function. 
+The following function Caches the inverse of the matrix from the above function. 
 
     cacheSolve <- function(x, ...) {
       m <- x$getInverseVector()
