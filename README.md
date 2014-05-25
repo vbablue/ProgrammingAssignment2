@@ -17,7 +17,7 @@ The following functions are for evaluation:
 
 <!-- -->
 
-makeCacheMatrix <- function(x = matrix()) {
+`makeCacheMatrix` <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
     x <<- y
