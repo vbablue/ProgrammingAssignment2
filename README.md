@@ -15,23 +15,23 @@ The following functions are for evaluation:
     already been calculated (and the matrix has not changed), then
     `cacheSolve` should retrieve the inverse from the cache.
 
-<!-- -->
 
-`makeCacheMatrix` <- function(x = matrix()) {
-  m <- NULL
-  set <- function(y) {
-    x <<- y
-    m <<- NULL
-  }
-  get <- function() x
-  setInverseVector <- function(solve) m <<- solve
-  getInverseVector <- function() m
-  list(set = set, get = get,
-       setInverseVector = setInverseVector,
-       getInverseVector = getInverseVector)   
-}
 
-<!-- -->
+    makeCacheMatrix <- function(x = matrix()) {
+      m <- NULL
+      set <- function(y) {
+        x <<- y
+        m <<- NULL
+      }
+      get <- function() x
+      setInverseVector <- function(solve) m <<- solve
+      getInverseVector <- function() m
+      list(set = set, get = get,
+           setInverseVector = setInverseVector,
+           getInverseVector = getInverseVector)   
+    }
+
+
 
 The following function Caches the inverse of the matrix from the above function. 
 
