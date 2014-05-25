@@ -50,14 +50,14 @@ The following function Caches the inverse of the matrix from the above function.
 
 ### Test Cases to test the cache functions.
 
-        1. amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
-        2. amatrix$get()         # Returns original matrix
-        3. cacheSolve(amatrix)   # Computes, caches, and returns    matrix inverse
-        4. amatrix$getInverseVector()  # Returns matrix inverse
-        5. cacheSolve(amatrix)   # Returns cached matrix inverse using previously computed matrix inverse
-        6. amatrix$set(matrix(c(0,5,99,66), nrow=2, ncol=2)) # Modify existing matrix
-        7. cacheSolve(amatrix)   # Computes, caches, and returns new matrix inverse
-        8. amatrix$get()         # Returns matrix
-        9. amatrix$getInverseVector()  # Returns matrix inverse
+         amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
+         amatrix$get()         # Returns original matrix
+         cacheSolve(amatrix)   # Computes, caches, and returns    matrix inverse
+         amatrix$getInverseVector()  # Returns matrix inverse
+         cacheSolve(amatrix)   # Returns cached matrix inverse using previously computed matrix inverse
+         amatrix$set(matrix(c(0,5,99,66), nrow=2, ncol=2)) # Modify existing matrix
+         cacheSolve(amatrix)   # Computes, caches, and returns new matrix inverse
+         amatrix$get()         # Returns matrix
+         amatrix$getInverseVector()  # Returns matrix inverse
 
 
