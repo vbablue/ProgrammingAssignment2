@@ -16,7 +16,7 @@ The following functions are for evaluation:
     `cacheSolve` should retrieve the inverse from the cache.
 
 <!-- -->
-
+`
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverseVector = getInverseVector)   
 }
 
-
+`
 
 The following function Caches the inverse of the matrix from the above function. 
 
