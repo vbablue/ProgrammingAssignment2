@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverseVector = getInverseVector)   
 }
 
-The following function calculates Caches the inverse of the matrix from the above function. 
+The following function  Caches the inverse of the matrix from the above function. 
 
     cacheSolve <- function(x, ...) {
       m <- x$getInverseVector()
@@ -47,6 +47,7 @@ The following function calculates Caches the inverse of the matrix from the abov
     }
 
 ### Test Cases to test the cache functions.
+<!-- -->
 amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
 amatrix$get()         # Returns original matrix
 cacheSolve(amatrix)   # Computes, caches, and returns    matrix inverse
