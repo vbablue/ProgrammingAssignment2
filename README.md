@@ -6,7 +6,7 @@ repeatedly (there are also alternatives to matrix inversion that we will
 not discuss here). Your assignment is to write a pair of functions that
 cache the inverse of a matrix.
 
-The following functions:
+The following functions are for evaluation:
 
 1.  `makeCacheMatrix`: This function creates a special "matrix" object
     that can cache its inverse.
@@ -31,6 +31,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getInverseVector = getInverseVector)   
 }
 
+<!-- -->
+
 The following function  Caches the inverse of the matrix from the above function. 
 
     cacheSolve <- function(x, ...) {
@@ -48,8 +50,8 @@ The following function  Caches the inverse of the matrix from the above function
 
 ### Test Cases to test the cache functions.
 <!-- -->
-amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
-amatrix$get()         # Returns original matrix
+1. amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
+2. amatrix$get()         # Returns original matrix
 cacheSolve(amatrix)   # Computes, caches, and returns    matrix inverse
 amatrix$getInverseVector()  # Returns matrix inverse
 cacheSolve(amatrix)   # Returns cached matrix inverse using previously computed matrix inverse
